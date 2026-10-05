@@ -1,0 +1,265 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:white;
+    min-height:100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#312e81,#2563eb,#06b6d4);
+    text-align:center;
+    padding:50px 20px;
+    box-shadow:0 0 25px rgba(0,255,255,.3);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+    text-shadow:0 0 15px #38bdf8;
+}
+
+header p{
+    font-size:1.1rem;
+    color:#dbeafe;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#0f172a !important;
+    border-bottom:2px solid #06b6d4;
+}
+
+.navbar-brand{
+    color:#38bdf8 !important;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.intro{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(56,189,248,.3);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 0 20px rgba(56,189,248,.15);
+}
+
+.intro img{
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(56,189,248,.5);
+}
+
+.intro p{
+    text-align:justify;
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.container{
+    margin-top:20px;
+}
+
+/* =========================
+   ASIDE
+========================= */
+
+.panel-recursos{
+    background:linear-gradient(180deg,#312e81,#1e1b4b);
+    border:1px solid #60a5fa;
+    box-shadow:0 0 15px rgba(96,165,250,.3);
+}
+
+.panel-recursos h3{
+    color:#93c5fd;
+    margin-bottom:20px;
+}
+
+.panel-recursos ul li{
+    margin-bottom:12px;
+}
+
+.panel-recursos a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.panel-recursos a:hover{
+    color:#60a5fa;
+    padding-left:8px;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido{
+    background:rgba(30,41,59,.85);
+    border-left:5px solid #38bdf8;
+    box-shadow:0 0 15px rgba(56,189,248,.15);
+    transition:.3s;
+}
+
+.contenido:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(56,189,248,.35);
+}
+
+.contenido h2{
+    color:#7dd3fc;
+    margin-bottom:10px;
+}
+
+.contenido p,
+.contenido li{
+    color:#e2e8f0;
+    line-height:1.8;
+}
+
+/* =========================
+   CARRUSEL
+========================= */
+
+.carousel{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 25px rgba(56,189,248,.15);
+}
+
+.carousel-inner{
+    border-radius:15px;
+}
+
+.carousel img{
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:rgba(0,0,0,.4);
+    border-radius:50%;
+    padding:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0f172a;
+    border-top:2px solid #38bdf8;
+    padding:25px;
+    margin-top:40px;
+}
+
+footer div{
+    color:white;
+}
+
+footer a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:white;
+}
+
+/* =========================
+   EFECTOS EXTRA
+========================= */
+
+.contenido,
+.panel-recursos,
+.intro,
+.carousel{
+    border-radius:18px;
+}
+
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.02);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    aside{
+        margin-bottom:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    .intro{
+        text-align:center;
+    }
+
+    .intro p{
+        text-align:left;
+        margin-top:15px;
+    }
+
+    .carousel img{
+        height:250px;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:10px;
+    }
+}
